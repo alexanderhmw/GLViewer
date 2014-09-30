@@ -1,7 +1,0 @@
-#!/bin/sh
-SDKNAME=GLViewer;
-sudo apt-get -y install libeigen3-dev;
-mkdir -p GCC;cd GCC;
-qmake -makefile ../Src/$SDKNAME.pro -r "CONFIG+=build_all";
-make;
-make install;
